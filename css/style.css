@@ -18,31 +18,26 @@
 body,
 html {
   min-height: 100vh;
-
 }
 
 body {
   max-width: 1920px;
   margin: 0 auto;
-
 }
 
-
 .wallpaper {
-width: 1920px;
-height: 992.01px;
-left: 0px;
-top: 0px;
+  width: 1920px;
+  height: 992px;
+  left: 0px;
+  top: 0px;
 
-background: #EAEEEF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  background: #eaeeef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Header */
 .header {
   display: flex;
-
-
 }
 
 .header > div {
@@ -51,8 +46,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /*Header logotip */
 .header__logo {
-margin-top: 35px;
-margin-left: 60.62px;
+  margin-top: 35px;
+  margin-left: 60.62px;
 }
 
 /* Header navigation */
@@ -67,10 +62,16 @@ li {
   text-transform: uppercase;
 
   color: #195557;
+
+  /* list-style-type: none; */
+}
+
+a:active {
+  list-style-type: disclosure-open;
 }
 
 /* Header contact */
-.header__contact > div{
+.header__contact > div {
   float: left;
   width: 69px;
   height: 69px;
@@ -99,38 +100,199 @@ li {
   font-feature-settings: "pnum" on, "lnum" on;
 
   color: #195557;
-
 }
 
 .header__basket {
   margin-left: 80px;
 }
 
-
+h1 {
+  text-align: center;
+}
 
 h2 {
-  font-family: 'Cormorant Infant';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 61px;
-/* identical to box height */
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
 
-text-transform: uppercase;
+  /* identical to box height */
 
-color: #70908B;
+  text-transform: uppercase;
 
-border: 1px solid #000000;
-text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+  color: #70908b;
 
+  border: 1px solid #000000;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text {
-  font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 
-color: #70908B;
+  color: #70908b;
+}
+
+/* Big hedgehog */
+
+.big-hedgehog {
+  display: flex;
+}
+
+.big-hedgehog-1 {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*  Icon */
+
+.icon {
+  height: 152px;
+  width: 152px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+  margin: 0 auto;
+}
+
+.icon-1 {
+  background-color: #ffedcd;
+  text-align: center;
+}
+
+.icon-2 {
+  background-color: #e2f0df;
+  text-align: center;
+}
+
+.icon-3 {
+  background-color: #70908b;
+  text-align: center;
+  border: 1px solid #94afab;
+}
+
+h4 {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: #195557;
+}
+
+h4 + p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #195557;
+}
+
+/* Cards */
+
+.card {
+  width: 1184px;
+  height: 410px;
+  border: 1px solid #000000;
+}
+
+.card-1 {
+  background-color: rgba(255, 237, 205, 1);
+}
+
+.card-2 {
+  background-color: rgba(226, 240, 223, 1);
+}
+
+.sale {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+  background-color: #70908b;
+}
+
+h3 {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #195557;
+}
+
+.card-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+.old-price {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+
+  color: #c2ccca;
+}
+
+.new-price {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #195557;
+}
+
+/* Form */
+
+.form-btn-text button,
+p {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #70908b;
+}
+
+button {
+  box-sizing: border-box;
+
+  width: 170px;
+  height: 49px;
+
+  background: #ffffff;
+  border: 2px solid #70908b;
+  border-radius: 61px;
+}
+
+.first-btn {
+  color: #ffffff;
+
+  background: #70908b;
 }
